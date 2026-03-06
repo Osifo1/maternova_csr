@@ -1,73 +1,123 @@
-# Welcome to your Lovable project
+# 🌸 Maternova Digital Care
 
-## Project info
+> Empowering mothers across Nigeria with digital maternal healthcare — from first trimester to postpartum.
 
-**URL**: https://lovable.dev/projects/a62fb579-f5c3-44a6-8967-bb71077c0efe
+---
 
-## How can I edit this code?
+## 📖 About
 
-There are several ways of editing your application.
+Maternova Digital Care is a web-based maternal health platform designed to support expectant mothers and healthcare providers in Nigeria. Built with accessibility and simplicity in mind, Maternova bridges the gap between quality maternal healthcare information and the everyday Nigerian mother — including support for Pidgin English.
 
-**Use Lovable**
+Whether you're tracking your pregnancy week by week, checking symptoms, preparing for delivery, or connecting with a community of mothers — Maternova has you covered.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a62fb579-f5c3-44a6-8967-bb71077c0efe) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- **🤰 Pregnancy Tracker** — Enter your LMP date and track your pregnancy week by week, with developmental updates, trimester info, and estimated due date
+- **🩺 Symptom Checker** — Check symptoms with text input, get severity assessments (normal, warning, emergency) with bilingual results in English and Pidgin
+- **📚 Articles & Education** — Curated maternal health articles organised by trimester and category
+- **👩‍👩‍👧 Community** — Connect with other mothers, share experiences, ask questions, and offer support
+- **📋 Preparation Checklist** — A complete delivery checklist with item costs, vendors, and personal progress tracking
+- **🧠 Maternal Health Quiz** — Test your knowledge and earn badges
+- **🏥 Nearby Clinics** — Find verified maternal health clinics in your area
+- **👩‍⚕️ Healthcare Provider Portal** — Verified providers get a dedicated dashboard (admin-approved signups)
+- **🌍 Bilingual Support** — English and Nigerian Pidgin throughout the app
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+| Layer | Technology |
+|---|---|
+| Frontend | React 18 + TypeScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS + Shadcn UI |
+| Routing | React Router v6 |
+| Data Fetching | TanStack React Query |
+| Forms | React Hook Form + Zod |
+| Backend & Database | Supabase (PostgreSQL) |
+| Authentication | Supabase Auth |
+| Charts | Recharts |
+| Icons | Lucide React |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
+- Node.js v18+
+- A Supabase account and project
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Osifo1/maternova_csr.git
+
+# Navigate into the project
+cd maternova_csr
+
+# Install dependencies
+npm install
+```
+
+### Environment Setup
+
+Create a `.env` file in the root of the project:
+
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### Run Locally
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🗄️ Database
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The database schema is built on Supabase (PostgreSQL) and includes tables for:
 
-## What technologies are used for this project?
+- `profiles` — user accounts and roles
+- `pregnancy_records` — per-user pregnancy data
+- `symptom_checks` — symptom checker history
+- `community_posts`, `post_replies`, `post_likes` — community features
+- `articles`, `saved_articles` — education content
+- `prep_items`, `user_prep_items` — delivery checklist
+- `clinics` — nearby healthcare facilities
+- `quiz_questions`, `quiz_results` — maternal health quiz
+- `provider_profiles` — verified healthcare provider data
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔐 Authentication
 
-## How can I deploy this project?
+- **Mothers** — Email/password signup, instant access after registration
+- **Healthcare Providers** — Email/password signup, access only after **admin approval** to ensure only qualified professionals are verified on the platform
 
-Simply open [Lovable](https://lovable.dev/projects/a62fb579-f5c3-44a6-8967-bb71077c0efe) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📦 Deployment
 
-Yes, you can!
+This app is deployed via **Vercel**. Every push to the `main` branch triggers an automatic redeployment.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🙏 Acknowledgements
+
+- Built with [Lovable.dev](https://lovable.dev) for rapid UI prototyping
+- Backend powered by [Supabase](https://supabase.com)
+- UI components from [Shadcn UI](https://ui.shadcn.com)
+
+---
+
+## 📄 License
+
+This project is private and proprietary. All rights reserved © Maternova 2025.
